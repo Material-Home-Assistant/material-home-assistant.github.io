@@ -41,14 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function openPage(hrefOrKey) {
+function openPage(hrefOrKey, blank = true) {
   if (!hrefOrKey) return;
 
   // Controlla se è una chiave nell'oggetto env
   const url = env[hrefOrKey] || hrefOrKey;
 
   // Apri il link in una nuova scheda
-  window.open(url, "_blank");
+  if (blank) {
+    window.open(url, "_blank");
+  } else {
+    window.location.href = url;
+  }
 }
 
 /**
