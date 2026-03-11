@@ -1,0 +1,2186 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Material Home Assistant - Components for Home Assistant</title>
+    <link href="assets/img/logo/logo.png" rel="icon" type="image/png" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      rel="stylesheet"
+    />
+
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,ROND@6..144,-10..0,25..151,1..1000,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Navbar Style -->
+    <link href="assets/css/navbar.css" rel="stylesheet" />
+
+    <link href="assets/css/body.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/env.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <!-- LOGO + BRAND -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img alt="Logo" class="navbar-logo" src="assets/img/logo/logo.svg" />
+          <div class="hidden-mobile">Material Home Assistant</div>
+        </a>
+
+        <!-- TOGGLER -->
+        <button
+          class="navbar-toggler custom-toggler"
+          data-bs-target="#navbarContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <i class="bi bi-list" style="font-size: 2rem; color: var(--cyan)"></i>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li hidden class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#components">Components</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#installation">Installation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://giovannilamarmora.gitbook.io/material-home-component">Documentation</a>
+            </li>
+          </ul>
+
+          <!-- CTA LOGIN -->
+          <div class="d-flex mt-3 mt-lg-0 ms-lg-3">
+            <a class="btn btn-login ms-3" id="loginBtn" target="_blank">
+              <i class="bi bi-box-arrow-in-right me-2"></i>Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-bg"></div>
+
+    <section class="hero-section">
+      <div class="hero-3d-container">
+        <div class="hero-3d-card"></div>
+        <div class="hero-3d-card"></div>
+        <div class="hero-3d-card"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-stars"></i> Version 3.0.0 Available Now
+        </div>
+
+        <img
+          alt="Logo"
+          style="
+            display: block;
+            justify-self: center;
+            width: 150px;
+            height: 150px;
+          "
+          class="navbar-logo hidden-mobile"
+          src="assets/img/logo/logo.svg"
+        />
+        <h1 class="hero-title">Material Home Assistant</h1>
+
+        <p class="hero-subtitle">
+          Beautifully designed Material Expressive 3 components for Home
+          Assistant. Simple to use, smooth to interact with, and built for
+          everyday comfort.
+        </p>
+
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a class="btn btn-hero-primary" id="downloadFreeBtn" target="_blank">
+            Try for Free
+          </a>
+          <a class="btn btn-hero-secondary" href="#pricing">Upgrade to Pro</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </section>
+
+    <section class="py-5 my-5" id="features">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Premium Features
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h3 class="h4 mb-3">Premium Components</h3>
+              <p class="text-muted">
+                Buttons, Sliders, Lights, Climate, Cameras and much more
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-layers"></i>
+              </div>
+              <h3 class="h4 mb-3">Custom Pages & Dialogs</h3>
+              <p class="text-muted">
+                Fully customized pages and dialogs inspired by Material
+                Expressive 3
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <h3 class="h4 mb-3">Community Driven Improvements</h3>
+              <p class="text-muted">
+                Continuous implementations based on community feedback and real
+                needs
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-download"></i>
+              </div>
+              <h3 class="h4 mb-3">1-Click Installation</h3>
+              <p class="text-muted">Quick and hassle-free setup</p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <h3 class="h4 mb-3">Lifetime Updates</h3>
+              <p class="text-muted">Always up to date with new features</p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="glass-card h-100">
+              <div class="glass-card-icon">
+                <i class="bi bi-key"></i>
+              </div>
+              <h3 class="h4 mb-3">Token Licensing</h3>
+              <p class="text-muted">Secure and flexible licensing system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 my-5" id="components">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Showcase Components
+        </h2>
+
+        <!-- TABS -->
+        <ul
+          class="nav nav-pills justify-content-center mb-5 custom-tab-card"
+          id="componentsTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 120px"
+              class="nav-link active"
+              data-bs-target="#free"
+              data-bs-toggle="pill"
+              id="free-tab"
+              role="tab"
+              type="button"
+            >
+              Free
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 120px"
+              class="nav-link"
+              data-bs-target="#pro"
+              data-bs-toggle="pill"
+              id="pro-tab"
+              role="tab"
+              type="button"
+            >
+              Pro
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 120px"
+              class="nav-link"
+              data-bs-target="#ultimate"
+              data-bs-toggle="pill"
+              id="ultimate-tab"
+              role="tab"
+              type="button"
+            >
+              Ultimate
+            </button>
+          </li>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content" id="componentsTabContent">
+          <!-- FREE -->
+          <div class="tab-pane fade show active" id="free" role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dashboard-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(6, 182, 212, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <img
+                    alt=""
+                    class="component-card-inner"
+                    hidden
+                    src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                    srcset=""
+                    style="
+                      width: auto;
+                      padding: 5px;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  />
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Dashboard Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-button-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(139, 92, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #8b5cf6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(139, 92, 246, 0.3),
+                        rgba(139, 92, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Button Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-slider-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(59, 130, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #3b82f6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(59, 130, 246, 0.3),
+                        rgba(59, 130, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Slider Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-climate-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(236, 72, 153, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ec4899;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(236, 72, 153, 0.3),
+                        rgba(236, 72, 153, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(236, 72, 153, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Climate Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-control-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(16, 185, 129, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #10b981;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(16, 185, 129, 0.3),
+                        rgba(16, 185, 129, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Control Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-lights-control',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(245, 158, 11, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #f59e0b;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(245, 158, 11, 0.3),
+                        rgba(245, 158, 11, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Light Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-media-page',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(239, 68, 68, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ef4444;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(239, 68, 68, 0.3),
+                        rgba(239, 68, 68, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Media Player Page</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dialog-page-sensor-view',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(14, 165, 233, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #0ea5e9;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(14, 165, 233, 0.3),
+                        rgba(14, 165, 233, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Sensor Dialog</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(168, 85, 247, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #a855f7;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(168, 85, 247, 0.3),
+                        rgba(168, 85, 247, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="assets/img/logo/logo.svg"
+                      style="max-width: 200px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">More available on</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRO -->
+          <div class="tab-pane fade" id="pro" role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dashboard-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(6, 182, 212, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <img
+                    alt=""
+                    class="component-card-inner"
+                    hidden
+                    src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                    srcset=""
+                    style="
+                      width: auto;
+                      padding: 5px;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  />
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Dashboard Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-button-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(139, 92, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #8b5cf6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(139, 92, 246, 0.3),
+                        rgba(139, 92, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Button Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-slider-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(59, 130, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #3b82f6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(59, 130, 246, 0.3),
+                        rgba(59, 130, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Slider Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-climate-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(236, 72, 153, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ec4899;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(236, 72, 153, 0.3),
+                        rgba(236, 72, 153, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(236, 72, 153, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Climate Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-control-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(16, 185, 129, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #10b981;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(16, 185, 129, 0.3),
+                        rgba(16, 185, 129, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Control Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-lights-control',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(245, 158, 11, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #f59e0b;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(245, 158, 11, 0.3),
+                        rgba(245, 158, 11, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Light Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-media-page',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(239, 68, 68, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ef4444;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(239, 68, 68, 0.3),
+                        rgba(239, 68, 68, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Media Player Page</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dialog-page-sensor-view',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(14, 165, 233, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #0ea5e9;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(14, 165, 233, 0.3),
+                        rgba(14, 165, 233, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Sensor Dialog</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(168, 85, 247, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #a855f7;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(168, 85, 247, 0.3),
+                        rgba(168, 85, 247, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="assets/img/logo/logo.svg"
+                      style="max-width: 200px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">More available on</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ULTIMATE -->
+          <div class="tab-pane fade" id="ultimate" role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dashboard-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(6, 182, 212, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <img
+                    alt=""
+                    class="component-card-inner"
+                    hidden
+                    src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                    srcset=""
+                    style="
+                      width: auto;
+                      padding: 5px;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  />
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #06b6d4;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(6, 182, 212, 0.3),
+                        rgba(6, 182, 212, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Dashboard Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-button-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(139, 92, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #8b5cf6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(139, 92, 246, 0.3),
+                        rgba(139, 92, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Button Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-slider-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(59, 130, 246, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #3b82f6;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(59, 130, 246, 0.3),
+                        rgba(59, 130, 246, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Slider/Material%20Slider%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Slider Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-climate-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(236, 72, 153, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ec4899;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(236, 72, 153, 0.3),
+                        rgba(236, 72, 153, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(236, 72, 153, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Climate/Material%20Climate%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Climate Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-control-card',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(16, 185, 129, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #10b981;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(16, 185, 129, 0.3),
+                        rgba(16, 185, 129, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(16, 185, 129, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Control Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-lights-control',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(245, 158, 11, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #f59e0b;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(245, 158, 11, 0.3),
+                        rgba(245, 158, 11, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(245, 158, 11, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                    <img
+                      alt="Light"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Light/Material%20Light%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Light Card</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-media-page',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(239, 68, 68, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #ef4444;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(239, 68, 68, 0.3),
+                        rgba(239, 68, 68, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Media Player Page</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-dialog-page-sensor-view',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(14, 165, 233, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      display: flex;
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #0ea5e9;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(14, 165, 233, 0.3),
+                        rgba(14, 165, 233, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(14, 165, 233, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Dark.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                    <img
+                      alt="Light"
+                      class="hidden-mobile"
+                      src="https://raw.githubusercontent.com/giovannilamarmora/lovelace-material-components/refs/heads/master/src/shared/assets/img/Material%20Home%20Component/Material%20Dialog/Material%20Dialog%20Light.jpg"
+                      style="max-width: 150px; padding: 10px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">Sensor Dialog</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 col-md-4"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                onclick="
+                  openPage(
+                    'https://giovannilamarmora.gitbook.io/material-home-component',
+                  )
+                "
+              >
+                <div
+                  class="component-card"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      rgba(168, 85, 247, 0.15),
+                      rgba(139, 92, 246, 0.05)
+                    );
+                  "
+                >
+                  <div
+                    class="component-card-inner"
+                    style="
+                      width: fit-content;
+                      height: fit-content;
+                      border-color: #a855f7;
+                      background: linear-gradient(
+                        135deg,
+                        rgba(168, 85, 247, 0.3),
+                        rgba(168, 85, 247, 0.1)
+                      );
+                      box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+                    "
+                  >
+                    <img
+                      alt="Dark"
+                      src="assets/img/logo/logo.svg"
+                      style="max-width: 200px; padding: 5px"
+                    />
+                  </div>
+                  <div class="component-card-label">
+                    <h5 class="mb-0">More available on</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 my-5" id="pricing">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Choose Your Plan
+        </h2>
+
+        <!-- TABS -->
+        <ul
+          class="nav nav-pills justify-content-center mb-5 custom-tab-card"
+          id="pricingTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 141px"
+              class="nav-link active"
+              data-bs-target="#monthly"
+              data-bs-toggle="pill"
+              id="monthly-tab"
+              role="tab"
+              type="button"
+            >
+              Monthly
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 141px"
+              class="nav-link"
+              data-bs-target="#annual"
+              data-bs-toggle="pill"
+              id="annual-tab"
+              role="tab"
+              type="button"
+            >
+              Annual
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              style="width: 141px"
+              class="nav-link"
+              data-bs-target="#one-time"
+              data-bs-toggle="pill"
+              id="one-time-tab"
+              role="tab"
+              type="button"
+            >
+              One-Time
+            </button>
+          </li>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content" id="pricingTabContent">
+          <!-- MONTHLY -->
+          <div class="tab-pane fade show active" id="monthly" role="tabpanel">
+            <div class="row g-4">
+              <!-- Copia le card e cambia i prezzi -->
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Free</h3>
+                  <div class="mb-4">
+                    <span class="price">€0</span>
+                    <span class="text-muted">/month</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="free_monthly">
+                    <!--<li>
+                                  <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                  No Editor Page
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                  Button Card Basic (General Button)
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                  Slider Card Basic (Lights)
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                  Lights Card Basic (No Area)
+                                </li>
+                                <li>
+                                  <i class="bi bi-x-circle-fill text-danger me-2"></i>
+                                  Fast Updates
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                  Community Support
+                                </li>-->
+                  </ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('download_free_url')"
+                  >
+                    Start Free
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="pricing-card popular h-100">
+                  <div class="popular-badge">🔥 Most Popular</div>
+                  <h3 class="h2 mb-4">Pro</h3>
+                  <div class="mb-4">
+                    <span class="price">€2</span>
+                    <span class="text-muted">/month</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="pro_monthly"></ul>
+                  <button
+                    class="btn btn-hero-primary w-100"
+                    onclick="openPage('pro_monthly')"
+                  >
+                    Upgrade to Pro
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Ultimate</h3>
+                  <div class="mb-4">
+                    <span class="price">€5</span>
+                    <span class="text-muted">/month</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="ultimate_monthly"></ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('ultimate_monthly')"
+                  >
+                    Upgrade to Ultimate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ANNUAL -->
+          <div class="tab-pane fade" id="annual" role="tabpanel">
+            <div class="row g-4">
+              <!-- Copia le card e cambia i prezzi -->
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Free</h3>
+                  <div class="mb-4">
+                    <span class="price">€0</span>
+                    <span class="text-muted">/year</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="free_annual"></ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('download_free_url')"
+                  >
+                    Start Free
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="pricing-card popular h-100">
+                  <div class="popular-badge">🔥 Most Popular</div>
+                  <h3 class="h2 mb-4">Pro</h3>
+                  <div class="mb-4">
+                    <span class="price">€9.90</span>
+                    <span class="text-muted">/year</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="pro_annual"></ul>
+                  <button
+                    class="btn btn-hero-primary w-100"
+                    onclick="openPage('pro_annual')"
+                  >
+                    Upgrade to Pro
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Ultimate</h3>
+                  <div class="mb-4">
+                    <span class="price">€19.90</span>
+                    <span class="text-muted">/year</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="ultimate_annual"></ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('ultimate_annual')"
+                  >
+                    Upgrade to Ultimate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ONE-TIME -->
+          <div class="tab-pane fade" id="one-time" role="tabpanel">
+            <div class="row g-4">
+              <!-- Free -->
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Free</h3>
+                  <div class="mb-4">
+                    <span class="price">€0</span>
+                    <span class="text-muted">/one-time</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="free_one_time"></ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('download_free_url')"
+                  >
+                    Start Free
+                  </button>
+                </div>
+              </div>
+
+              <!-- Pro -->
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="pricing-card popular h-100">
+                  <div class="popular-badge">🔥 Most Popular</div>
+                  <h3 class="h2 mb-4">Pro</h3>
+                  <div class="mb-4">
+                    <span class="price">€19.90</span>
+                    <span class="text-muted">/one-time</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="pro_one_time"></ul>
+                  <button
+                    class="btn btn-hero-primary w-100"
+                    onclick="openPage('pro_one_time')"
+                  >
+                    Upgrade to Pro
+                  </button>
+                </div>
+              </div>
+
+              <!-- Ultimate -->
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-card h-100">
+                  <h3 class="h2 mb-4">Ultimate</h3>
+                  <div class="mb-4">
+                    <span class="price">€29.90</span>
+                    <span class="text-muted">/one-time</span>
+                  </div>
+                  <ul class="list-unstyled mb-4" id="ultimate_one_time"></ul>
+                  <button
+                    class="btn btn-hero-secondary w-100"
+                    onclick="openPage('ultimate_one_time')"
+                  >
+                    Upgrade to Ultimate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 my-5" id="installation">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">
+          Easy Installation
+        </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 px-5 px-lg-0">
+            <div class="position-relative">
+              <div class="step-line d-none d-md-block"></div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="0">
+                <div class="d-flex align-items-start gap-4">
+                  <div class="step-number flex-shrink-0">01</div>
+                  <div class="pt-2">
+                    <h3 class="h3 mb-2">Choose Your Plan</h3>
+                    <p class="text-muted fs-5">
+                      Select the plan that fits you best
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="d-flex align-items-start gap-4">
+                  <div class="step-number flex-shrink-0">02</div>
+                  <div class="pt-2">
+                    <h3 class="h3 mb-2">Secure Payment</h3>
+                    <p class="text-muted fs-5">
+                      Complete your payment with Stripe
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                <div class="d-flex align-items-start gap-4">
+                  <div class="step-number flex-shrink-0">03</div>
+                  <div class="pt-2">
+                    <h3 class="h3 mb-2">Receive Your Token</h3>
+                    <p class="text-muted fs-5">Get your license token</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-5" data-aos="fade-up" data-aos-delay="600">
+                <div class="d-flex align-items-start gap-4">
+                  <div class="step-number flex-shrink-0">04</div>
+                  <div class="pt-2">
+                    <h3 class="h3 mb-2">Install</h3>
+                    <p class="text-muted fs-5">
+                      Add the integration to Home Assistant
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-0" data-aos="fade-up" data-aos-delay="800">
+                <div class="d-flex align-items-start gap-4">
+                  <div class="step-number flex-shrink-0">05</div>
+                  <div class="pt-2">
+                    <h3 class="h3 mb-2">Enjoy</h3>
+                    <p class="text-muted fs-5">Explore your new dashboard</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4 mb-5 px-3 px-lg-0">
+          <div class="col-lg-3 col-md-6">
+            <img
+              alt=""
+              src="assets/img/logo/logo.svg"
+              style="
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-left: -20px;
+              "
+            />
+            <h3
+              class="h4 mb-4"
+              style="
+                background: linear-gradient(135deg, var(--cyan), var(--purple));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              Material Home Assistant
+            </h3>
+            <p class="text-muted">Premium components for Home Assistant</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="h5 mb-3">Product</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#features">Features</a></li>
+              <li class="mb-2"><a href="#pricing">Pricing</a></li>
+              <li class="mb-2">
+                <a class="link" onclick="openPage('documentation')"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="h5 mb-3">Support</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a class="link" onclick="openPage('comunity')">Community</a>
+              </li>
+              <li class="mb-2">
+                <a class="link" onclick="openPage('website')">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="h5 mb-3">Social</h4>
+            <div class="d-flex gap-3">
+              <a class="social-icon" onclick="openPage('github')">
+                <i class="bi bi-github"></i>
+              </a>
+              <a class="social-icon" onclick="openPage('instagram')">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a class="social-icon" onclick="openPage('linkedin')">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-4 border-top text-center text-muted"
+          style="border-color: rgba(6, 182, 212, 0.2) !important"
+        >
+          <p class="mb-0">
+            © 2026 Material Home Assistant Pro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

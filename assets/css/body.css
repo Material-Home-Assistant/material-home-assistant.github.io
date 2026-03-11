@@ -1,0 +1,592 @@
+.hero-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(circle at top left,
+      #0b1120 0,
+      #020617 40%,
+      #000 100%);
+}
+
+.hero-bg::before,
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  filter: blur(80px);
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  animation: floatBlob 18s infinite alternate;
+}
+
+.hero-bg::before {
+  background: radial-gradient(circle, var(--accent-1), transparent 60%);
+  top: -80px;
+  left: -120px;
+}
+
+.hero-bg::after {
+  background: radial-gradient(circle, var(--accent-2), transparent 60%);
+  bottom: -120px;
+  right: -120px;
+  animation-delay: -4s;
+}
+
+@keyframes floatBlob {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(40px, -40px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(-30px, 30px, 0) scale(1.05);
+  }
+}
+
+/** 
+* --------------------------------------
+* Welcome Page
+* --------------------------------------
+*/
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (max-width: 399px) {
+  .hero-section {
+    margin-top: 80px;
+  }
+}
+
+.hero-3d-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-3d-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  backdrop-filter: blur(20px);
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero-3d-card:nth-child(1) {
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.3) 0%,
+      rgba(139, 92, 246, 0.3) 100%);
+  box-shadow: 0 0 60px rgba(6, 182, 212, 0.5);
+  transform: translateZ(0px);
+}
+
+.hero-3d-card:nth-child(2) {
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.2) 0%,
+      rgba(139, 92, 246, 0.2) 100%);
+  box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
+  transform: translateZ(50px) scale(0.9);
+  animation-delay: 0.5s;
+}
+
+.hero-3d-card:nth-child(3) {
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.1) 0%,
+      rgba(139, 92, 246, 0.1) 100%);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  transform: translateZ(100px) scale(0.8);
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.2),
+      rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  backdrop-filter: blur(20px);
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--cyan), var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 80px rgba(6, 182, 212, 0.5);
+  animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #d1d5db;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-hero-primary {
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  align-content: center;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+}
+
+.btn-hero-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+}
+
+.btn-hero-secondary {
+  border: 2px solid rgba(6, 182, 212, 0.5);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+}
+
+.btn-hero-secondary:hover {
+  transform: scale(1.05);
+  background: rgba(6, 182, 212, 0.1);
+  border-color: var(--cyan);
+  color: white;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  color: var(--cyan);
+  font-size: 2rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-3d-container {
+    width: min(320px, 90vw);
+    height: min(580px, 90vh);
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    max-width: 280px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 280px;
+  }
+}
+/** 
+* --------------------------------------
+* END Welcome Page
+* --------------------------------------
+*/
+
+/** 
+* --------------------------------------
+* Features Page
+* --------------------------------------
+*/
+#features {
+  scroll-margin-top: 80px;
+  /* spazio sopra l'elemento quando scrollato con ancòre */
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4rem;
+}
+
+.glass-card {
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.05) 0%,
+      rgba(139, 92, 246, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  padding: 2rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 40px rgba(6, 182, 212, 0.3);
+}
+
+.glass-card-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.2),
+      rgba(139, 92, 246, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--cyan);
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.glass-card:hover .glass-card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+/** 
+* --------------------------------------
+* END Features Page
+* --------------------------------------
+*/
+
+/** 
+* --------------------------------------
+* Components Page
+* --------------------------------------
+*/
+#components {
+  scroll-margin-top: 80px;
+  /* spazio sopra l'elemento quando scrollato con ancòre */
+}
+
+.component-card {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 1.5rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.component-card:hover {
+  transform: scale(1.1);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+.component-card-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  border: 2px solid;
+  transition: transform 0.5s ease;
+}
+
+.component-card:hover .component-card-inner {
+  transform: translate(-50%, -50%) rotate(12deg);
+}
+
+.component-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(10, 10, 20, 0.9), transparent);
+}
+
+@media (max-width: 768px) {
+  .component-card-inner img {
+    max-width: 80vw !important;
+  }
+}
+
+/** 
+* --------------------------------------
+* END Components Page
+* --------------------------------------
+*/
+
+/** 
+* --------------------------------------
+* Pricing Page
+* --------------------------------------
+*/
+#pricing {
+  scroll-margin-top: 80px;
+  /* spazio sopra l'elemento quando scrollato con ancòre */
+}
+
+.pricing-card {
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.05) 0%,
+      rgba(139, 92, 246, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  padding: 2.5rem;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.pricing-card.popular {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 60px rgba(6, 182, 212, 0.3);
+  background: linear-gradient(135deg,
+      rgba(6, 182, 212, 0.1) 0%,
+      rgba(139, 92, 246, 0.1) 100%);
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.custom-tab-card {
+  border-radius: 50px;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  background-color: rgba(10, 10, 20, 0.6);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  margin: 0 auto 3rem;
+  display: flex;
+  padding: 0.4rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  gap: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .custom-tab-card {
+    max-width: 190px;
+  }
+}
+
+.custom-tab-card .nav-item {
+  margin: 0;
+}
+
+.custom-tab-card .nav-link {
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2rem !important;
+  color: var(--text-muted) !important;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  margin: 0 !important;
+}
+
+.custom-tab-card .nav-link:hover {
+  color: var(--text-main) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.custom-tab-card .nav-link.active {
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+}
+
+.custom-tab-card .nav-link::after {
+  display: none;
+}
+/** 
+* --------------------------------------
+* END Pricing Page
+* --------------------------------------
+*/
+
+/** 
+* --------------------------------------
+* Instalation Page
+* --------------------------------------
+*/
+#installation {
+  scroll-margin-top: 80px;
+  /* spazio sopra l'elemento quando scrollato con ancòre */
+}
+
+.step-line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom,
+      var(--cyan),
+      var(--purple),
+      var(--blue));
+}
+
+.step-number {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 0 40px rgba(6, 182, 212, 0.5);
+}
+/** 
+* --------------------------------------
+* END Instalation Page
+* --------------------------------------
+*/
+
+/** 
+* --------------------------------------
+* Footer
+* --------------------------------------
+*/
+footer {
+  border-top: 1px solid rgba(6, 182, 212, 0.2);
+  padding: 5rem 0 2rem;
+  margin-top: 5rem;
+}
+
+footer a,
+.link {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+footer a:hover,
+.link:hover {
+  color: var(--cyan);
+}
+
+.social-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(6, 182, 212, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: rgba(6, 182, 212, 0.3);
+  transform: scale(1.1);
+  color: var(--cyan);
+}
+/** 
+* --------------------------------------
+* END Footer
+* --------------------------------------
+*/
