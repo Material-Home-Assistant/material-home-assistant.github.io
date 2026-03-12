@@ -59,35 +59,61 @@ function openPage(hrefOrKey, blank = true) {
  * Features for free, pro, advanced
  */
 const featuresFree = `
-    <li><i class="bi bi-x-circle-fill text-danger me-2"></i> No Editor Page</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Button Card Basic (General Button)</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Slider Card Basic (Lights)</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Lights Card Basic (No Area)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dashboard Card (Basic)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Button Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Slider Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Climate Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Lights Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Control Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material User Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Menu Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Media Page</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Sensor Dialog (Basic)</li>
     <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Fast Updates</li>
+    <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Feature Request (Slow)</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Community Support</li>
   `;
 
 const featuresPro = `
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Editor Page</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> All Free components, in an advanced version</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Control Card</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Climate Card</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Menu Card</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Other Premium Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> All Free components</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dashboard Card (Advanced)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Options Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Circle Progress Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Advanced Actions</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Lifetime Updates</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Fast Updates</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Feature Request</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority Support</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> 1 Device Installation</li>
   `;
 
+//const featuresPro = `
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> All Free components</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dashboard Card (Advanced)</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Editor Page</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Control Card</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Climate Card</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Menu Card</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Other Premium Card</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Lifetime Updates</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Fast Updates</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority Support</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> 1 Device Installation</li>
+//  `;
+
 const featuresUltimate = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Everything in Pro</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Components</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Media Player Page</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Dialog (Sensor and other)</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> 3 Device Installation</li>
   `;
+
+//const featuresUltimate = `
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Everything in Pro</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Components</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Media Player Page</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Dialog (Sensor and other)</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
+//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> 3 Device Installation</li>
+//  `;
+
 document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelectorAll("#free_monthly, #free_annual, #free_one_time")
