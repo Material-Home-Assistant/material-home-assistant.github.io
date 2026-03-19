@@ -112,6 +112,8 @@ const featuresUltimate = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Switch Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Lights Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Dialog</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dialog Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Popup Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
   `;
 
