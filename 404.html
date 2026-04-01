@@ -228,7 +228,7 @@
     </div>
     <script>
       // Prende il nome del dominio (es. service.materialhomeassistant.com)
-      const domain = window.location.hostname;
+      const domain = window.location.host + window.location.pathname;
       // Lo inserisce nello span con id "current-domain"
       document.getElementById("current-domain").textContent = domain;
       document.getElementById("current-domain-2").textContent = domain;
