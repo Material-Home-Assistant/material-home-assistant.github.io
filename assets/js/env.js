@@ -8,8 +8,7 @@ const env = {
   ultimate_monthly: "https://buy.stripe.com/test_6oU6oIfBN8Robqldez9fW03",
   ultimate_annual: "https://buy.stripe.com/test_bJe00k4X99Vs661b6r9fW04",
   ultimate_one_time: "https://buy.stripe.com/test_cNibJ2exJffMbqleiD9fW05",
-  documentation:
-    "https://material-home-assistant.github.io/docs/setup/overview",
+  documentation: "https://materialhomeassistant.com/docs/setup/overview",
   community:
     "https://community.home-assistant.io/t/introducing-the-google-components/916428",
   website: "https://giovannilamarmora.github.io",
