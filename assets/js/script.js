@@ -81,6 +81,7 @@ const featuresPro = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Options Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Circle Progress Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Media Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Advanced Actions</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Card Mod</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Javascript Templates</li>
