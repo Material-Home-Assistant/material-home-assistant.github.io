@@ -1,1 +1,0 @@
-const a="/docs/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Light.png",s="/docs/assets/img/Material%20Home%20Component/Material%20Dashboard/Material%20Dashboard%20Dark.png";export{a as _,s as a};
