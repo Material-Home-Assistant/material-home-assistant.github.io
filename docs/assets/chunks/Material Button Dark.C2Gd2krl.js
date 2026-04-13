@@ -1,0 +1,1 @@
+const t="/docs/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Light.png",a="/docs/assets/img/Material%20Home%20Component/Material%20Button/Material%20Button%20Dark.png";export{t as _,a};

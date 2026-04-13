@@ -1,0 +1,1 @@
+const a="/docs/assets/img/Material%20Home%20Component/Material%20Battery%20Dialog/Material%20Battery%20Dialog%20Light.jpg",t="/docs/assets/img/Material%20Home%20Component/Material%20Battery%20Dialog/Material%20Battery%20Dialog%20Dark.jpg";export{a as _,t as a};

@@ -1,0 +1,1 @@
+const a="/docs/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Light.jpg",e="/docs/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Dark.jpg";export{a as _,e as a};

@@ -1,0 +1,1 @@
+const o="/docs/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Light.png",t="/docs/assets/img/Material%20Home%20Component/Material%20Control/Material%20Control%20Dark.png";export{o as _,t as a};

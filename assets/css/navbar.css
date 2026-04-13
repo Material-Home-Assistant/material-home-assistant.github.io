@@ -1,0 +1,156 @@
+/* Header/Navbar */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  /*background: rgba(10, 10, 20, 0.8);*/
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+  transition: all 0.3s ease;
+  height: 83px;
+}
+
+.navbar-custom.scrolled {
+  padding: 0.5rem 0;
+  background: rgba(10, 10, 20, 0.95);
+  box-shadow: 0 4px 30px rgba(6, 182, 212, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #d1d5db !important;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.nav-link:hover {
+  color: var(--cyan) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  /*bottom: -5px;*/
+  bottom: 3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-login {
+  border: 2px solid rgba(6, 182, 212, 0.5);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: var(--cyan);
+  color: white;
+}
+
+a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile links same style as desktop */
+@media (max-width: 992px) {
+  /* Custom toggler styling */
+  .custom-toggler {
+    box-shadow: none !important;
+    outline: none;
+    border: 2px solid rgba(6, 182, 212, 0.5);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+
+  /* Mobile dropdown background identical to desktop */
+  .navbar-collapse {
+    margin-top: 30px;
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(6, 182, 212, 0.15);
+  }
+
+  .nav-link {
+    margin: 0.7rem 0;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(6, 182, 212, 0.12);
+    padding-left: 15px !important;
+  }
+
+  .nav-link:hover {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--cyan) !important;
+  }
+
+  /* Remove underline animation on mobile (cleaner) */
+  .nav-link::after {
+    display: none;
+  }
+
+  /* Login button full-width on mobile */
+  .btn-login {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+}
