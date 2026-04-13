@@ -1,16 +1,16 @@
 const SUPPORT_EMAIL = "support@materialhomeassistant.com";
 
 const env = {
-  login_url: "https://billing.stripe.com/p/login/test_28E00kdTh5pWam2b21gnK00",
+  login_url: "https://billing.stripe.com/p/login/dRm6oH5xgg1nelV0eE6AM00",
   download_free_url:
     "https://my.home-assistant.io/redirect/hacs_repository/?repository=lovelace-material-components&owner=giovannilamarmora&category=Plugin",
   /** Pro Plan */
-  pro_monthly: "https://buy.stripe.com/test_28E00kdTh5pWam2b21gnK00",
-  pro_annual: "https://buy.stripe.com/test_28EaEY2az4lSbq62vvgnK01",
+  pro_monthly: "https://buy.stripe.com/dRm14ne3MeXj4Ll2mM6AM01",
+  pro_annual: "https://buy.stripe.com/3cI8wPf7QbL72Dd2mM6AM02",
   //pro_one_time: "https://buy.stripe.com/test_4gMcN60GT9Vs661dez9fW02",
   /** Ultimate Plan */
-  ultimate_monthly: "https://buy.stripe.com/test_5kQ5kE2az7y4eCib21gnK02",
-  ultimate_annual: "https://buy.stripe.com/test_28E9AUcPdcSo79Q2vvgnK03",
+  ultimate_monthly: "https://buy.stripe.com/cNiaEXgbU16t4LlgdC6AM03",
+  ultimate_annual: "https://buy.stripe.com/aFa5kD5xg2ax4Lle5u6AM04",
   //ultimate_one_time: "https://buy.stripe.com/test_cNibJ2exJffMbqleiD9fW05",
   /** Documentation */
   documentation: "https://materialhomeassistant.com/docs/setup/overview",
