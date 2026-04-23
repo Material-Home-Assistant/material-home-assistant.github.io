@@ -17,6 +17,8 @@ const env = {
   community:
     "https://community.home-assistant.io/t/introducing-the-google-components/916428",
   website: "https://giovannilamarmora.github.io",
+  terms: "https://materialhomeassistant.com/docs/support/terms-and-conditions",
+  privacy: "https://materialhomeassistant.com/docs/support/privacy-policy",
   instagram: "https://www.instagram.com/gio_lamarmora",
   github: "https://github.com/giovannilamarmora",
   linkedin: "https://www.linkedin.com/in/giovannilamarmora/",
