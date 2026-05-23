@@ -1793,9 +1793,43 @@
 
     <section class="py-5 my-5" id="pricing">
       <div class="container">
-        <h2 class="section-title text-center" data-aos="fade-up">
+        <h2
+          class="section-title text-center"
+          style="margin-bottom: 2rem"
+          data-aos="fade-up"
+        >
           Choose Your Plan
         </h2>
+
+        <div class="row justify-content-center mb-4" data-aos="fade-up">
+          <div class="col-lg-10">
+            <div
+              class="alert alert-warning text-center glass-card"
+              style="
+                border-color: rgba(245, 158, 11, 0.4);
+                background: rgba(245, 158, 11, 0.05);
+                color: #f59e0b;
+              "
+            >
+              <i class="bi bi-exclamation-triangle-fill me-2"></i>
+              <strong>Important:</strong> Please use a
+              <strong>valid and real email address</strong> during checkout.
+              This email is strictly required to automatically receive your
+              license token and to manage your subscription (upgrades, billing,
+              or cancellations) via Stripe. If you encounter any issues, please
+              check your spam folder or contact our
+              <a
+                href="#"
+                class="alert-link"
+                onclick="
+                  openPage('/docs/support/about-us#🛠%EF%B8%8F-support-contact')
+                "
+                style="color: #f59e0b; text-decoration: underline"
+                >Support</a
+              >.
+            </div>
+          </div>
+        </div>
 
         <!-- TABS -->
         <ul
@@ -2094,7 +2128,27 @@
                   <div class="step-number flex-shrink-0">03</div>
                   <div class="pt-2">
                     <h3 class="h3 mb-2">Receive Your Token</h3>
-                    <p class="text-muted fs-5">Get your license token</p>
+                    <p class="text-muted fs-5 mb-2">
+                      Your license token will be automatically sent to the email
+                      address used during checkout.
+                    </p>
+                    <div class="small text-warning" style="line-height: 1.4">
+                      <i class="bi bi-exclamation-triangle-fill me-1"></i>
+                      <strong>Note:</strong> A valid email is strictly required
+                      to receive the token and manage your subscription via
+                      Stripe. If you misspelled your email or didn't receive the
+                      message, please check your spam folder or reach out to our
+                      <a
+                        href="#"
+                        class="text-warning text-decoration-underline"
+                        onclick="
+                          openPage(
+                            '/docs/support/about-us#🛠%EF%B8%8F-support-contact',
+                          )
+                        "
+                        >Support</a
+                      >.
+                    </div>
                   </div>
                 </div>
               </div>
