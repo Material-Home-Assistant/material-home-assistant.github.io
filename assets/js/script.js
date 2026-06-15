@@ -82,29 +82,18 @@ const featuresPro = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Circle Progress Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Media Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Template Card (Beta)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Card (Alpha)</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Advanced Actions</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Card Mod</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Javascript Templates</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Jinja2 Templates</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Lifetime Updates</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Fast Updates</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Feature Request</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority Support</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> 1 Device Installation</li>
   `;
-
-//const featuresPro = `
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> All Free components</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dashboard Card (Advanced)</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Editor Page</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Control Card</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Climate Card</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Menu Card</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Other Premium Card</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Lifetime Updates</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Fast Updates</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Priority Support</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> 1 Device Installation</li>
-//  `;
 
 const featuresUltimate = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Everything in Pro</li>
@@ -115,17 +104,9 @@ const featuresUltimate = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dialog Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Popup Card</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Home (Alpha)</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
   `;
-
-//const featuresUltimate = `
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Everything in Pro</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Components</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Media Player Page</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Custom Dialog (Sensor and other)</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
-//    <li><i class="bi bi-check-circle-fill text-success me-2"></i> 3 Device Installation</li>
-//  `;
 
 document.addEventListener("DOMContentLoaded", () => {
   document
