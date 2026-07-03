@@ -15,7 +15,7 @@ const env = {
   /** Documentation */
   documentation: "https://materialhomeassistant.com/docs/setup/overview",
   community:
-    "https://community.home-assistant.io/t/introducing-the-google-components/916428",
+    "https://community.home-assistant.io/t/introducing-material-home-assistant/1015191",
   website: "https://giovannilamarmora.github.io",
   terms: "https://materialhomeassistant.com/docs/support/terms-and-conditions",
   privacy: "https://materialhomeassistant.com/docs/support/privacy-policy",

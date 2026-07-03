@@ -8,7 +8,7 @@
   <a href="https://www.buymeacoffee.com/giovannilamarmora" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%E2%98%95&slug=giovannilamarmora&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me A Coffee"></a>
 </div>
 
-[![WebSite](https://img.shields.io/badge/WebSite%20-Visit-blue?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://material-home-assistant.github.io)&nbsp;&nbsp;[![WebSite](https://img.shields.io/badge/Home%20Assistant%20Forum-View-blue?style=for-the-badge&logo=Home-Assistant&logoColor=white)](https://community.home-assistant.io/t/introducing-the-google-components/916428)
+[![WebSite](https://img.shields.io/badge/WebSite%20-Visit-blue?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://material-home-assistant.github.io)&nbsp;&nbsp;[![WebSite](https://img.shields.io/badge/Home%20Assistant%20Forum-View-blue?style=for-the-badge&logo=Home-Assistant&logoColor=white)](https://community.home-assistant.io/t/introducing-material-home-assistant/1015191)
 
 **Bring the Google Home app experience directly into Home Assistant**
 
@@ -452,7 +452,7 @@ Read the Documentation →
 </a>
 <br>
 <br>
-<a href="https://community.home-assistant.io/t/introducing-the-google-components/916428" style="text-decoration: none;">
+<a href="https://community.home-assistant.io/t/introducing-material-home-assistant/1015191" style="text-decoration: none;">
 <div style="background: white; color: #4285F4; padding: 16px 48px; border-radius: 100px; font-weight: bold; font-size: 18px; display: inline-block; box-shadow: 0 4px 16px rgba(0,0,0,0.2); transition: transform 0.2s;">
 Official Community and Discussion →
 </div>
