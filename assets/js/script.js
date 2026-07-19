@@ -82,8 +82,7 @@ const featuresPro = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Circle Progress Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Media Card</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Template Card (Beta)</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Card (Alpha)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Template Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Advanced Actions</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Card Mod</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Javascript Templates</li>
@@ -98,13 +97,14 @@ const featuresPro = `
 const featuresUltimate = `
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Everything in Pro</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Sensor Dialog (Advanced)</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Battery Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Switch Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Lights Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Alarm Dialog</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Dialog Card</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Popup Card</li>
-    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Home (Alpha)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Card (Alpha)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Header (Beta)</li>
+    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Material Strategy Home (Alpha Preview)</li>
     <li><i class="bi bi-check-circle-fill text-success me-2"></i> Dedicated Support</li>
   `;
 
