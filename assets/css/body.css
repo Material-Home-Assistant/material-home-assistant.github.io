@@ -465,6 +465,26 @@
   color: var(--cyan);
 }
 
+.original-crossed-price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: line-through;
+  text-decoration-color: #ef4444;
+  text-decoration-thickness: 3px;
+  margin-right: 0.5rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 576px) {
+  .price {
+    font-size: 3.2rem;
+  }
+  .original-crossed-price {
+    font-size: 1.8rem;
+  }
+}
+
 .popular-badge {
   position: absolute;
   top: -1rem;
@@ -525,6 +545,288 @@
 .custom-tab-card .nav-link::after {
   display: none;
 }
+
+/** 
+* --------------------------------------
+* Promotional Banner (Monthly Plans)
+* --------------------------------------
+*/
+.promo-banner {
+  position: relative;
+  animation: promoFadeIn 0.4s ease-out;
+  background: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.12) 0%,
+    rgba(139, 92, 246, 0.14) 50%,
+    rgba(236, 72, 153, 0.08) 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  border-radius: 1.5rem;
+  padding: 1.75rem 2rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.12);
+  margin-bottom: 2.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes promoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.promo-banner:hover {
+  border-color: rgba(6, 182, 212, 0.55);
+  box-shadow: 0 12px 35px rgba(6, 182, 212, 0.22);
+}
+
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(6, 182, 212, 0.15);
+  color: var(--cyan);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.8rem;
+}
+
+.promo-discount-badge {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  box-shadow: 0 2px 10px rgba(236, 72, 153, 0.35);
+}
+
+.promo-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0.25rem;
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.promo-description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.promo-price-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.promo-plan-price-tag {
+  background: rgba(10, 10, 20, 0.6);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 50px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.promo-plan-price-tag s {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.promo-plan-price-tag strong {
+  color: var(--cyan);
+}
+
+.promo-plan-price-tag .promo-percent-badge {
+  background: rgba(236, 72, 153, 0.25);
+  color: #f472b6;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+}
+
+.promo-code-card {
+  background: rgba(10, 10, 20, 0.75);
+  border: 1px dashed rgba(6, 182, 212, 0.5);
+  border-radius: 1rem;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.promo-code-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+}
+
+.promo-code-val {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--cyan);
+  user-select: all;
+}
+
+.promo-copy-btn {
+  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.promo-copy-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.45);
+  color: #ffffff;
+}
+
+.promo-copy-btn.copied {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.promo-accordion-wrapper {
+  border-top: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.promo-how-to-toggle {
+  background: none;
+  border: none;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.promo-how-to-toggle:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.promo-chevron {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.promo-how-to-toggle[aria-expanded="true"] .promo-chevron,
+.promo-how-to-toggle.active .promo-chevron {
+  transform: rotate(180deg);
+}
+
+.promo-instructions-body {
+  background: rgba(10, 10, 20, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  padding: 1rem 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.promo-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin-bottom: 0.65rem;
+  line-height: 1.45;
+}
+
+.promo-step-item:last-child {
+  margin-bottom: 0;
+}
+
+.promo-step-number {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: rgba(6, 182, 212, 0.2);
+  color: var(--cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-step-text strong {
+  color: #ffffff;
+}
+
+.promo-extra-info {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .promo-code-card {
+    margin-top: 0.5rem;
+  }
+}
+
 /** 
 * --------------------------------------
 * END Pricing Page

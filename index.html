@@ -40,6 +40,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/env.js"></script>
+    <script src="assets/js/promo.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- SEO Meta Tags -->
@@ -199,7 +200,7 @@
 
       <div class="hero-content">
         <div class="hero-badge">
-          <i class="bi bi-stars"></i> Version 3.0.0 Available Now
+          <i class="bi bi-stars"></i> Version 3.1.0 Available Now
         </div>
 
         <img
@@ -1173,15 +1174,10 @@
               </div>
 
               <div
-                hidden
                 class="col-12 col-md-4"
                 data-aos="zoom-in"
                 data-aos-delay="600"
-                onclick="
-                  openPage(
-                    'https://giovannilamarmora.gitbook.io/material-home-component/cards/material-media-page',
-                  )
-                "
+                onclick="openPage('/docs/cards/material-graph-card')"
               >
                 <div
                   class="component-card"
@@ -1196,7 +1192,6 @@
                   <div
                     class="component-card-inner"
                     style="
-                      display: flex;
                       width: fit-content;
                       height: fit-content;
                       border-color: #ef4444;
@@ -1210,18 +1205,19 @@
                   >
                     <img
                       alt="Dark"
-                      src="https://raw.githubusercontent.com/Material-Home-Assistant/material-home-assistant.github.io/refs/heads/main/docs/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Dark.jpg"
-                      style="max-width: 150px; padding: 10px"
+                      src="https://raw.githubusercontent.com/Material-Home-Assistant/material-home-assistant.github.io/refs/heads/main/docs/assets/img/Material%20Home%20Component/Material%20Graph%20Card/Material%20Graph%20Card%20Dark.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
                     />
                     <img
                       alt="Light"
-                      class="hidden-mobile"
-                      src="https://raw.githubusercontent.com/Material-Home-Assistant/material-home-assistant.github.io/refs/heads/main/docs/assets/img/Material%20Home%20Component/Material%20Media%20Overlay/Material%20Media%20Light.jpg"
-                      style="max-width: 150px; padding: 10px"
+                      src="https://raw.githubusercontent.com/Material-Home-Assistant/material-home-assistant.github.io/refs/heads/main/docs/assets/img/Material%20Home%20Component/Material%20Graph%20Card/Material%20Graph%20Card%20Light.png"
+                      srcset=""
+                      style="max-width: 350px; padding: 5px"
                     />
                   </div>
                   <div class="component-card-label">
-                    <h5 class="mb-0">Media Player Page</h5>
+                    <h5 class="mb-0">Graph Card</h5>
                   </div>
                 </div>
               </div>
@@ -1872,6 +1868,9 @@
         <div class="tab-content" id="pricingTabContent">
           <!-- MONTHLY -->
           <div class="tab-pane fade show active" id="monthly" role="tabpanel">
+            <!-- Promotional Banner (Configured via assets/js/promo-config.js or assets/data/promo.json) -->
+            <div id="monthlyPromoBannerContainer"></div>
+
             <div class="row g-4">
               <!-- Copia le card e cambia i prezzi -->
               <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
@@ -1894,7 +1893,7 @@
                 <div class="pricing-card popular h-100">
                   <div class="popular-badge">🔥 Most Popular</div>
                   <h3 class="h2 mb-4">Pro</h3>
-                  <div class="mb-4">
+                  <div class="mb-4" id="price_container_pro_monthly">
                     <span class="price">€2.99</span>
                     <span class="text-muted">/month</span>
                   </div>
@@ -1910,7 +1909,7 @@
               <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="pricing-card h-100">
                   <h3 class="h2 mb-4">Ultimate</h3>
-                  <div class="mb-4">
+                  <div class="mb-4" id="price_container_ultimate_monthly">
                     <span class="price">€5.99</span>
                     <span class="text-muted">/month</span>
                   </div>
@@ -1928,6 +1927,9 @@
 
           <!-- ANNUAL -->
           <div class="tab-pane fade" id="annual" role="tabpanel">
+            <!-- Promotional Banner (Configured via assets/data/promo.jsonc) -->
+            <div id="annualPromoBannerContainer"></div>
+
             <div class="row g-4">
               <!-- Copia le card e cambia i prezzi -->
               <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
@@ -1967,7 +1969,7 @@
                     </div>
                   </div>
 
-                  <div class="mb-4">
+                  <div class="mb-4" id="price_container_pro_annual">
                     <span class="price">€24.90</span>
                     <span class="text-muted">/year</span>
                   </div>
@@ -1999,7 +2001,7 @@
                       >
                     </div>
                   </div>
-                  <div class="mb-4">
+                  <div class="mb-4" id="price_container_ultimate_annual">
                     <span class="price">€49.90</span>
                     <span class="text-muted">/year</span>
                   </div>

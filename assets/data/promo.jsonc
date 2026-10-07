@@ -1,0 +1,74 @@
+{
+  // ==============================================================================
+  // MATERIAL HOME ASSISTANT - CONFIGURAZIONE BLACK FRIDAY 2026 (JSONC)
+  // ==============================================================================
+  // Configurazione per la promozione Black Friday 2026.
+  // - Valida per la settimana del Black Friday 2026 (23-30 Novembre 2026).
+  // - Applicabile solo all'abbonamento Mensile Ultimate al prezzo promozionale di €0.00.
+  // - I campi non utilizzati sono commentati come richiesto per non perderli.
+  // ==============================================================================
+
+  // STATO DELLA PROMOZIONE
+  // "active": true per abilitare la promozione.
+  "active": false,
+
+  // DOVE APPLICARE E MOSTRARE IL BANNER
+  // Valori ammessi: "monthly" | "annual" | "both"
+  // Attivo esclusivamente per i piani mensili.
+  "applyTo": "monthly",
+
+  // PERIODO DI VALIDITÀ TEMPORALE (Settimana del Black Friday 2026)
+  // Dal lunedì 23 novembre 2026 a lunedì 30 novembre 2026 (Cyber Monday compreso).
+  // NOTA PER TEST: La data odierna è precedente al Black Friday. Se desideri testare
+  // l'anteprima visiva subito sul frontend, imposta temporaneamente startDate: "2026-10-01".
+  "startDate": "2026-11-23",
+  "endDate": "2026-11-30",
+
+  // TESTI PRINCIPALI DEL BANNER (in lingua inglese)
+  "badge": "Black Friday 2026",
+  "title": "Black Friday Special: Ultimate Monthly for Free",
+  "description": "Celebrate Black Friday with Material Home Assistant! New subscribers get their first month of the Ultimate plan completely free (€0.00).",
+  "couponCode": "BLACKFRIDAY2026",
+
+  // ==============================================================================
+  // CONFIGURAZIONE TIPO DI SCONTO E PREZZI
+  // ==============================================================================
+  // "discountType": "custom_price" permette di impostare €0.00 sul mensile Ultimate.
+  // Il sistema calcola automaticamente il 100% di sconto senza decimali.
+  "discountType": "custom_price",
+
+  // Percentuale fissa (commentata perché gestita tramite customPrices a €0.00)
+  // "discountPercentage": 20,
+
+  // PREZZI SCONTATI PERSONALIZZATI
+  // I piani non scontati (Pro e Annuale) sono commentati come richiesto.
+  "customPrices": {
+    // "pro": {
+    //   "monthly": 1.99,
+    //   "annual": 19.90
+    // },
+    "ultimate": {
+      "monthly": 0.0 // Prezzo originale: €5.99 -> Sconto calcolato automatico: 100% OFF (€0.00/mese)
+      // "annual": 34.90
+    }
+  },
+
+  // BADGE IN RISALTO
+  // "auto" genera automaticamente "100% OFF" dal prezzo a 0€.
+  // In alternativa puoi impostare "FREE 1ST MONTH" se preferisci un badge testuale.
+  "discountHighlight": "auto",
+
+  // GUIDA PASSO PASSO SU COME APPLICARE IL CODICE & GESTIONE UTENTI ESISTENTI
+  "howToApply": {
+    "title": "How it works & How to redeem",
+    "steps": [
+      "<strong>New Subscribers:</strong> Select <strong>Upgrade to Ultimate</strong> under the Monthly plan below.",
+      "On the secure Stripe checkout page, click <strong>\"Add promotion code\"</strong>.",
+      "Enter <strong>BLACKFRIDAY2026</strong> and click <strong>Apply</strong> to get your first month for €0.00.",
+      "<strong>Existing Subscribers:</strong> You don't need to do anything! The Black Friday discount is applied automatically by us to all active subscriptions (both monthly and annual) to thank you for supporting our project. You will receive a confirmation email. If you have an active, valid subscription and have not received the email, please contact us at <a href=\"mailto:support@materialhomeassistant.com\" style=\"color: var(--cyan); text-decoration: underline;\">support@materialhomeassistant.com</a>."
+    ]
+  },
+
+  // ULTERIORI NOTE, CONDIZIONI O INFORMAZIONI
+  "additionalInfo": "New subscribers only for the checkout coupon. Existing subscribers with an active subscription receive the automatic benefit via email. Questions? Contact support@materialhomeassistant.com."
+}
