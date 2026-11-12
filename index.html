@@ -37,12 +37,10 @@
     <link href="assets/css/navbar.css" rel="stylesheet" />
 
     <link href="assets/css/body.css" rel="stylesheet" />
-    <link href="assets/css/showcase-3d.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/env.js"></script>
     <script src="assets/js/promo.js"></script>
-    <script src="assets/js/device-flip.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- SEO Meta Tags -->
@@ -156,8 +154,8 @@
         <!-- MENU -->
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#overview">Overview</a>
+            <li hidden class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
             </li>
 
             <li class="nav-item">
@@ -202,7 +200,7 @@
 
       <div class="hero-content">
         <div class="hero-badge">
-          <i class="bi bi-stars"></i> Version 3.3.x Available Now
+          <i class="bi bi-stars"></i> Version 3.1.0 Available Now
         </div>
 
         <img
@@ -234,171 +232,6 @@
 
       <div class="scroll-indicator">
         <i class="bi bi-chevron-down"></i>
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         APPLE-STYLE SCROLLYTELLING 3D SHOWCASE SECTION
-         ========================================================================= -->
-    <section class="scrolly-showcase-section" id="overview">
-      <div class="scrolly-sticky-viewport">
-        <!-- Atmospheric Dynamic Glows -->
-        <div class="scrolly-ambient-glow">
-          <div class="scrolly-glow-primary"></div>
-          <div class="scrolly-glow-secondary"></div>
-        </div>
-
-        <div class="scrolly-split-layout">
-          <!-- LEFT COLUMN: Narrative Story Column -->
-          <div class="scrolly-narrative-panel">
-            <div class="story-beats-wrapper">
-              <!-- Beat 1: Default HA -->
-              <div class="story-beat-card active" id="storyBeat1">
-                <div class="story-badge-pill default-badge">
-                  <i class="bi bi-cpu me-2"></i> 01 &bull; Default Lovelace UI
-                </div>
-                <h2 class="story-headline">
-                  Engineered for Function.
-                  <span class="text-danger-gradient">Not for Living.</span>
-                </h2>
-                <p class="story-body">
-                  Home Assistant is unmatched in power, but out of the box its
-                  interface is rigid, boxy, and cold. Managing your smart home
-                  shouldn't feel like debugging a server.
-                </p>
-                <div class="story-tags-list">
-                  <span class="story-tag tag-negative"
-                    ><i class="bi bi-x-circle-fill me-1 text-danger"></i> Sharp
-                    4px corners</span
-                  >
-                  <span class="story-tag tag-negative"
-                    ><i class="bi bi-x-circle-fill me-1 text-danger"></i> Rigid
-                    switch toggles</span
-                  >
-                  <span class="story-tag tag-negative"
-                    ><i class="bi bi-x-circle-fill me-1 text-danger"></i> Clunky
-                    scaling</span
-                  >
-                </div>
-              </div>
-
-              <!-- Beat 2: Material Home Assistant (The Real Upgrade) -->
-              <div class="story-beat-card" id="storyBeat2">
-                <div class="story-badge-pill pro-badge">
-                  <i class="bi bi-stars me-2"></i> 02 &bull; Material Home
-                  Assistant
-                </div>
-                <h2 class="story-headline">
-                  Your Home Dashboard.
-                  <span class="gradient-text">Pure Luxury.</span>
-                </h2>
-                <p class="story-body">
-                  From wall tablets to companion smartphones: zero YAML frustration,
-                  100% visual GUI editors, and an interface of pure Material 3 luxury.
-                </p>
-                <div class="story-cta-actions">
-                  <a href="#pricing" class="btn btn-hero-primary story-btn-action">
-                    <i class="bi bi-gem me-1"></i> Upgrade to Pro
-                  </a>
-                  <a
-                    href="#components"
-                    class="btn btn-hero-secondary story-btn-action"
-                  >
-                    Explore Components
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT COLUMN: 3D Device Stage (Unobstructed, Angled in 3D Perspective) -->
-          <div class="scrolly-stage-col" id="deviceStage">
-            <!-- Tablet (16:10 Landscape) -->
-            <div class="device-wrapper device-tablet" id="tabletDevice">
-              <div class="device-chassis tablet-chassis" id="tabletFlipper">
-                <div class="device-camera-dot"></div>
-                <div class="glass-sheen" id="tabletSheen"></div>
-
-                <!-- FRONT: Default Home Assistant UI -->
-                <div class="device-screen screen-front">
-                  <img
-                    src="assets/img/showcase/tablet-default.png"
-                    alt="Tablet Default Home Assistant UI"
-                    class="device-screen-img"
-                  />
-                </div>
-
-                <!-- BACK: Material Home Assistant UI -->
-                <div class="device-screen screen-back">
-                  <img
-                    src="assets/img/showcase/tablet-material.png"
-                    alt="Tablet Material 3 Expressive UI"
-                    class="device-screen-img"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Smartphone (Portrait) -->
-            <div class="device-wrapper device-phone" id="phoneDevice">
-              <div class="device-chassis phone-chassis" id="phoneFlipper">
-                <div class="phone-dynamic-island"></div>
-                <div class="glass-sheen" id="phoneSheen"></div>
-
-                <!-- FRONT: Default Home Assistant Mobile UI -->
-                <div class="device-screen screen-front">
-                  <img
-                    src="assets/img/showcase/phone-default.png"
-                    alt="Phone Default Home Assistant UI"
-                    class="device-screen-img"
-                  />
-                </div>
-
-                <!-- BACK: Material Home Assistant Mobile UI -->
-                <div class="device-screen screen-back">
-                  <img
-                    src="assets/img/showcase/phone-material.png"
-                    alt="Phone Material 3 Expressive UI"
-                    class="device-screen-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating Scrolly HUD Controller Dock (Bottom Center) -->
-        <div class="scrolly-hud-bottom-center">
-          <div class="scrolly-hud-dock" role="tablist">
-            <button
-              class="hud-dock-btn active"
-              id="hudStep1"
-              type="button"
-              onclick="scrollToStoryBeat(1)"
-              role="tab"
-              aria-selected="true"
-            >
-              <span class="hud-lbl-desktop">01 &bull; Default HA</span>
-              <span class="hud-lbl-mobile">01 Default</span>
-            </button>
-            <button
-              class="hud-dock-btn"
-              id="hudStep2"
-              type="button"
-              onclick="scrollToStoryBeat(2)"
-              role="tab"
-              aria-selected="false"
-            >
-              <span class="hud-lbl-desktop"
-                >02 &bull; Material Home Assistant</span
-              >
-              <span class="hud-lbl-mobile">02 Material</span>
-            </button>
-          </div>
-          <div class="hud-scroll-prompt" id="hudScrollPrompt">
-            <i class="bi bi-mouse"></i> Scroll down to transform your dashboard
-          </div>
-        </div>
       </div>
     </section>
 
